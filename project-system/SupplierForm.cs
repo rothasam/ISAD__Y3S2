@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace project_system
 {
-    public partial class Form1 : Form
+    public partial class SupplierForm : Form
     {
-        public Form1()
+        public SupplierForm()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
