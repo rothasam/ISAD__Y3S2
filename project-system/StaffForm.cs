@@ -41,5 +41,20 @@ namespace project_system
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StaffForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
