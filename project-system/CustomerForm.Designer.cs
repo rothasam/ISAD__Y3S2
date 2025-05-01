@@ -38,11 +38,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCus = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCus)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -149,13 +149,14 @@
             this.textBox5.TabIndex = 31;
             this.textBox5.Text = "ស្វែងរកតាមឈ្មោះ";
             // 
-            // dataGridView1
+            // dgvCus
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(338, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(390, 197);
-            this.dataGridView1.TabIndex = 30;
+            this.dgvCus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCus.Location = new System.Drawing.Point(338, 125);
+            this.dgvCus.Name = "dgvCus";
+            this.dgvCus.Size = new System.Drawing.Size(390, 197);
+            this.dgvCus.TabIndex = 30;
+            this.dgvCus.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button6
             // 
@@ -210,7 +211,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvCus);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
@@ -220,7 +221,8 @@
             this.Controls.Add(this.label2);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.CustomerForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,7 +239,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCus;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;

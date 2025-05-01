@@ -228,6 +228,7 @@
             this.dgvStaff.Name = "dgvStaff";
             this.dgvStaff.Size = new System.Drawing.Size(506, 307);
             this.dgvStaff.TabIndex = 16;
+            this.dgvStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellContentClick);
             // 
             // fileSystemWatcher1
             // 
