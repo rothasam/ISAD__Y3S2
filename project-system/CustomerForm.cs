@@ -37,6 +37,10 @@ namespace project_system
             DataTable dt = new DataTable();
             depp.Fill(dt);
             dgvCus.DataSource = dt;
+
+            dgvCus.Columns[0].HeaderText = "អត្ថលេខ";
+            dgvCus.Columns[1].HeaderText = "ឈ្មោះ";
+            dgvCus.Columns[2].HeaderText = "លេខទំនាក់ទំនង";
         }
 
         public void onChange(Object caller, SqlNotificationEventArgs e)
@@ -49,6 +53,23 @@ namespace project_system
             {
                 loadData();
             }
+        }
+
+        private void onAddNew(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spSetCustomer", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@name", txtName.Text);
+            com.Parameters.AddWithValue("@contact", txtContact.Text);
+
+            com.ExecuteNonQuery();  // run stored procedure
+            MessageBox.Show("ជោគជ័យ");
+        }
+
+        private void onSearch(object sender, EventArgs e)
+        {
+            (dgvCus.DataSource as DataTable).DefaultView.RowFilter = string.Format(
+                "Name LIKE '%{0}%'", txtSearch.Text);
         }
 
 
@@ -76,5 +97,7 @@ namespace project_system
         {
 
         }
+
+        
     }
 }

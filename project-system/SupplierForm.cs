@@ -52,6 +52,23 @@ namespace project_system
             }
         }
 
+        private void onAddNew(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spSetSupplier", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@nameSup", txtName.Text);
+            com.Parameters.AddWithValue("@address", txtAddress.Text);
+            com.Parameters.AddWithValue("@contact", txtContact.Text);
+
+            com.ExecuteNonQuery();// run stored procedure
+            MessageBox.Show("Supplier added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void onSearch(object sender, EventArgs e)
+        {
+            (dgvSup.DataSource as DataTable).DefaultView.RowFilter = string.Format(
+                "Supplier LIKE '%{0}%'", txtSearch.Text);
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -72,5 +89,12 @@ namespace project_system
         {
 
         }
+
+        private void dgvSup_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
     }
 }

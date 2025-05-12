@@ -70,9 +70,29 @@ namespace project_system
             }
         }
 
+        private void onAddNew(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spSetProduct", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@proName", txtName.Text);
+            com.Parameters.AddWithValue("@qty", txtQty.Text);
+            com.Parameters.AddWithValue("@upis", txtPrice.Text);
+            com.Parameters.AddWithValue("@sup", txtSalePrice.Text);
+
+            com.ExecuteNonQuery();// run stored procedure
+
+            MessageBox.Show("Product added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void ProductForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void onSearch(object sender, EventArgs e)
+        {
+            (dgvPro.DataSource as DataTable).DefaultView.RowFilter = string.Format(
+                "Name LIKE '%{0}%'", txtSearch.Text);
         }
     }
 }
