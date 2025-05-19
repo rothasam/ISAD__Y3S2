@@ -94,5 +94,33 @@ namespace project_system
             (dgvPro.DataSource as DataTable).DefaultView.RowFilter = string.Format(
                 "Name LIKE '%{0}%'", txtSearch.Text);
         }
+
+        private void dgvCellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            if(dgvPro.RowCount > 0)
+            {
+                i = e.RowIndex; // get the index of the row that is clicked
+                if (i < 0) return; 
+                DataGridViewRow row = dgvPro.Rows[i]; // get the row that is clicked
+                txtId.Text = row.Cells[0].Value.ToString();
+                txtName.Text = row.Cells[1].Value.ToString(); 
+                txtQty.Text = row.Cells[2].Value.ToString(); 
+                txtPrice.Text = row.Cells[3].Value.ToString(); 
+                txtSalePrice.Text = row.Cells[4].Value.ToString(); 
+            }
+        }
+
+        private void onUpdate(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spUpdateProduct", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@id", txtId.Text);
+            com.Parameters.AddWithValue("@name", txtName.Text);
+            com.Parameters.AddWithValue("@qty", txtQty.Text);
+            com.Parameters.AddWithValue("@priceInstock", txtPrice.Text);
+            com.Parameters.AddWithValue("@salePrice", txtSalePrice.Text);
+            com.ExecuteNonQuery();
+        }
     }
 }

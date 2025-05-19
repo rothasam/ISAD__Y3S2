@@ -70,6 +70,39 @@ namespace project_system
                 "Supplier LIKE '%{0}%'", txtSearch.Text);
         }
 
+        private void onDelete(object sender, EventArgs e)
+        {
+            // 
+        }
+
+        private void dgvCellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            if(dgvSup.Rows.Count > 0)
+            {
+                i = e.RowIndex;
+                if (i < 0) return;
+                DataGridViewRow row = dgvSup.Rows[i];
+                txtId.Text = row.Cells[0].Value.ToString();
+                txtName.Text = row.Cells[1].Value.ToString();
+                txtAddress.Text = row.Cells[2].Value.ToString();
+                txtContact.Text = row.Cells[3].Value.ToString();
+            }
+        }
+
+
+        private void onUpdate(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spUpdateSupplier", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@id", txtId.Text);
+            com.Parameters.AddWithValue("@name", txtName.Text);
+            com.Parameters.AddWithValue("@address", txtAddress.Text);
+            com.Parameters.AddWithValue("@contact", txtContact.Text);
+            com.ExecuteNonQuery();
+            MessageBox.Show("Supplier updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

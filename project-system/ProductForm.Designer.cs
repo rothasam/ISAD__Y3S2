@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQty = new System.Windows.Forms.TextBox();
@@ -62,13 +62,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "កូដ";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(27, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(101, 33);
-            this.textBox1.TabIndex = 2;
+            this.txtId.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(27, 45);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(101, 33);
+            this.txtId.TabIndex = 2;
             // 
             // txtName
             // 
@@ -208,6 +208,7 @@
             this.dgvPro.Name = "dgvPro";
             this.dgvPro.Size = new System.Drawing.Size(380, 230);
             this.dgvPro.TabIndex = 35;
+            this.dgvPro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             // 
             // button6
             // 
@@ -236,6 +237,7 @@
             this.button4.Text = "Edit";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.onUpdate);
             // 
             // button1
             // 
@@ -256,7 +258,7 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
@@ -299,7 +301,7 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

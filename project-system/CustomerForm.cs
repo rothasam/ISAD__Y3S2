@@ -98,6 +98,44 @@ namespace project_system
 
         }
 
-        
+        private void dgvCellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            if(dgvCus.RowCount > 0)
+            {
+                i = e.RowIndex;
+                if (i < 0) return;
+                DataGridViewRow row = dgvCus.Rows[i];
+                txtId.Text = row.Cells[0].Value.ToString();
+                txtName.Text = dgvCus.Rows[i].Cells[1].Value.ToString();
+                txtContact.Text = dgvCus.Rows[i].Cells[2].Value.ToString();
+
+
+                    
+            }
+
+        }
+
+        private void onDelete(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spDeleteCustomer", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@id", txtId.Text);
+            com.ExecuteNonQuery();
+        }
+
+        private void onUpdate(object sender, EventArgs e)
+        {
+            com = new SqlCommand("spUpdateCustomer", op.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@id", txtId.Text);
+            com.Parameters.AddWithValue("@name", txtName.Text);
+            com.Parameters.AddWithValue("@contact", txtContact.Text);
+
+            com.ExecuteNonQuery();
+
+            MessageBox.Show("ជោគជ័យ");
+
+        }
     }
 }

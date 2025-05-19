@@ -31,7 +31,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSup)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -80,13 +81,13 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "ឈ្មោះ";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(25, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(99, 33);
-            this.textBox1.TabIndex = 7;
+            this.txtId.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(25, 51);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(99, 33);
+            this.txtId.TabIndex = 7;
             // 
             // label1
             // 
@@ -183,6 +184,7 @@
             this.dgvSup.Name = "dgvSup";
             this.dgvSup.Size = new System.Drawing.Size(389, 274);
             this.dgvSup.TabIndex = 25;
+            this.dgvSup.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             this.dgvSup.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSup_CellContentClick);
             // 
             // button6
@@ -190,7 +192,7 @@
             this.button6.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = global::project_system.Properties.Resources.eye;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(42, 439);
+            this.button6.Location = new System.Drawing.Point(167, 439);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.button6.Size = new System.Drawing.Size(125, 33);
@@ -204,7 +206,7 @@
             this.button4.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::project_system.Properties.Resources.update;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(173, 439);
+            this.button4.Location = new System.Drawing.Point(298, 439);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.button4.Size = new System.Drawing.Size(92, 33);
@@ -212,13 +214,14 @@
             this.button4.Text = "Edit";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.onUpdate);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::project_system.Properties.Resources.add;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(274, 439);
+            this.button1.Location = new System.Drawing.Point(399, 439);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.button1.Size = new System.Drawing.Size(89, 33);
@@ -233,7 +236,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtAddress);
@@ -244,12 +247,28 @@
             this.panel1.Size = new System.Drawing.Size(348, 323);
             this.panel1.TabIndex = 33;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::project_system.Properties.Resources.delete;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(41, 439);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.button3.Size = new System.Drawing.Size(106, 33);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Delete";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.onDelete);
+            // 
             // SupplierForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(830, 516);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
@@ -274,7 +293,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label4;
@@ -288,5 +307,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button3;
     }
 }
