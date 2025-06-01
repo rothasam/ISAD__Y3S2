@@ -16,11 +16,7 @@ namespace project_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new StaffForm());
-            //Application.Run(new ProductForm());
-            //Application.Run(new CustomerForm());
-            //Application.Run(new SupplierForm());
-            Application.Run(new ImportDetailForm());
+            Application.Run(new MainForm());
         }
     }
 }

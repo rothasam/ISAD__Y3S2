@@ -22,11 +22,14 @@ namespace project_system
         string filePath;
         Byte[] photo; // to store image in byte array, because in this client we use byte array to store image and in database we use varbinary(max) to store image
 
-
-        public StaffForm()
+        private MainForm mainForm;
+        public StaffForm(MainForm mainForm)
         {
             op.myConnection();
             InitializeComponent();
+
+            this.mainForm = mainForm;
+
             loadData();
         }
 
@@ -240,6 +243,10 @@ namespace project_system
 
         }
 
-        
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            mainForm.Show(); 
+        }
     }
 }

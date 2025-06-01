@@ -17,11 +17,13 @@ namespace project_system
         SqlCommand com;
         SqlDataAdapter dap;
         DataTable dt;
-        public CustomerForm()
+        private MainForm mainForm;
+        public CustomerForm(MainForm mainForm)
         {
             op.myConnection();
             InitializeComponent();
             loadData();
+            this.mainForm = mainForm;
         }
 
         public void loadData()
@@ -136,6 +138,12 @@ namespace project_system
 
             MessageBox.Show("ជោគជ័យ");
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            mainForm.Show();
         }
     }
 }

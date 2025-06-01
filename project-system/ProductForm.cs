@@ -17,12 +17,13 @@ namespace project_system
         SqlCommand com;  // for executing SQL commands
         SqlDataAdapter dap; // for filling data into DataTable
         DataTable dt;  // to hold data that retrieved from database
-
-        public ProductForm()
+        private MainForm mainForm;
+        public ProductForm(MainForm mainForm)
         {
             op.myConnection(); // call method myConnection() from class MyOper to eastablish or create connection to database
             InitializeComponent(); 
             loadData(); // call method loadData()
+            this.mainForm = mainForm;
         }
 
         public void loadData()
@@ -121,6 +122,12 @@ namespace project_system
             com.Parameters.AddWithValue("@priceInstock", txtPrice.Text);
             com.Parameters.AddWithValue("@salePrice", txtSalePrice.Text);
             com.ExecuteNonQuery();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            mainForm.Show();
         }
     }
 }

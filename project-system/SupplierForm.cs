@@ -17,12 +17,14 @@ namespace project_system
         SqlCommand com;
         SqlDataAdapter dap;
         DataTable dt;
+        private MainForm mainForm;
 
-        public SupplierForm()
+        public SupplierForm(MainForm mainForm)
         {
             op.myConnection();
             InitializeComponent();
             loadData();
+            this.mainForm = mainForm;
         }
 
         public void loadData()
@@ -128,6 +130,10 @@ namespace project_system
 
         }
 
-        
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            mainForm.Show();
+        }
     }
 }
