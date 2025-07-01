@@ -63,7 +63,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(436, 113);
+            this.label10.Location = new System.Drawing.Point(399, 110);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(108, 25);
             this.label10.TabIndex = 48;
@@ -73,7 +73,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(80, 228);
+            this.label9.Location = new System.Drawing.Point(62, 194);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(119, 25);
             this.label9.TabIndex = 47;
@@ -82,7 +82,7 @@
             // txtInStockPrice
             // 
             this.txtInStockPrice.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInStockPrice.Location = new System.Drawing.Point(505, 403);
+            this.txtInStockPrice.Location = new System.Drawing.Point(498, 357);
             this.txtInStockPrice.Name = "txtInStockPrice";
             this.txtInStockPrice.Size = new System.Drawing.Size(101, 33);
             this.txtInStockPrice.TabIndex = 46;
@@ -90,7 +90,7 @@
             // txtQty
             // 
             this.txtQty.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQty.Location = new System.Drawing.Point(380, 403);
+            this.txtQty.Location = new System.Drawing.Point(373, 357);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(91, 33);
             this.txtQty.TabIndex = 44;
@@ -98,7 +98,7 @@
             // txtPro
             // 
             this.txtPro.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPro.Location = new System.Drawing.Point(224, 403);
+            this.txtPro.Location = new System.Drawing.Point(217, 357);
             this.txtPro.Name = "txtPro";
             this.txtPro.Size = new System.Drawing.Size(127, 33);
             this.txtPro.TabIndex = 42;
@@ -106,7 +106,7 @@
             // txtProID
             // 
             this.txtProID.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProID.Location = new System.Drawing.Point(69, 403);
+            this.txtProID.Location = new System.Drawing.Point(62, 357);
             this.txtProID.Name = "txtProID";
             this.txtProID.Size = new System.Drawing.Size(130, 33);
             this.txtProID.TabIndex = 40;
@@ -116,7 +116,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(277, 228);
+            this.label3.Location = new System.Drawing.Point(265, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 25);
             this.label3.TabIndex = 38;
@@ -126,7 +126,7 @@
             // 
             this.cboSupName.Font = new System.Drawing.Font("Noto Sans Cham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSupName.FormattingEnabled = true;
-            this.cboSupName.Location = new System.Drawing.Point(282, 271);
+            this.cboSupName.Location = new System.Drawing.Point(270, 223);
             this.cboSupName.Name = "cboSupName";
             this.cboSupName.Size = new System.Drawing.Size(144, 32);
             this.cboSupName.TabIndex = 37;
@@ -136,7 +136,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 124);
+            this.label1.Location = new System.Drawing.Point(214, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 25);
             this.label1.TabIndex = 36;
@@ -146,7 +146,7 @@
             // 
             this.cboStaffID.Font = new System.Drawing.Font("Noto Sans Cham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboStaffID.FormattingEnabled = true;
-            this.cboStaffID.Location = new System.Drawing.Point(244, 152);
+            this.cboStaffID.Location = new System.Drawing.Point(219, 139);
             this.cboStaffID.Name = "cboStaffID";
             this.cboStaffID.Size = new System.Drawing.Size(144, 32);
             this.cboStaffID.TabIndex = 35;
@@ -157,7 +157,7 @@
             this.dtpImpDate.CustomFormat = "MM-dd-yyyy";
             this.dtpImpDate.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpImpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpImpDate.Location = new System.Drawing.Point(80, 151);
+            this.dtpImpDate.Location = new System.Drawing.Point(55, 138);
             this.dtpImpDate.Name = "dtpImpDate";
             this.dtpImpDate.Size = new System.Drawing.Size(144, 33);
             this.dtpImpDate.TabIndex = 34;
@@ -166,7 +166,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 110);
+            this.label2.Location = new System.Drawing.Point(50, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 33;
@@ -175,9 +175,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(289, 43);
+            this.label7.Location = new System.Drawing.Point(181, 37);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(257, 43);
             this.label7.TabIndex = 32;
@@ -191,7 +191,7 @@
             // txtStaffName
             // 
             this.txtStaffName.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStaffName.Location = new System.Drawing.Point(429, 151);
+            this.txtStaffName.Location = new System.Drawing.Point(404, 138);
             this.txtStaffName.Name = "txtStaffName";
             this.txtStaffName.ReadOnly = true;
             this.txtStaffName.Size = new System.Drawing.Size(177, 33);
@@ -200,7 +200,7 @@
             // txtSupID
             // 
             this.txtSupID.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupID.Location = new System.Drawing.Point(74, 270);
+            this.txtSupID.Location = new System.Drawing.Point(62, 222);
             this.txtSupID.Name = "txtSupID";
             this.txtSupID.ReadOnly = true;
             this.txtSupID.Size = new System.Drawing.Size(177, 33);
@@ -211,7 +211,7 @@
             this.lsvImpDetail.Font = new System.Drawing.Font("Noto Sans Khmer", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvImpDetail.FullRowSelect = true;
             this.lsvImpDetail.HideSelection = false;
-            this.lsvImpDetail.Location = new System.Drawing.Point(69, 467);
+            this.lsvImpDetail.Location = new System.Drawing.Point(62, 421);
             this.lsvImpDetail.Name = "lsvImpDetail";
             this.lsvImpDetail.Size = new System.Drawing.Size(561, 134);
             this.lsvImpDetail.TabIndex = 52;
@@ -222,12 +222,12 @@
             this.btnAdd.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Image = global::project_system.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(650, 403);
+            this.btnAdd.Location = new System.Drawing.Point(180, 659);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnAdd.Size = new System.Drawing.Size(89, 33);
+            this.btnAdd.Size = new System.Drawing.Size(107, 33);
             this.btnAdd.TabIndex = 53;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "បញ្ចូល";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -237,7 +237,7 @@
             this.btnExit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Image = global::project_system.Properties.Resources.close;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(692, 43);
+            this.btnExit.Location = new System.Drawing.Point(508, 652);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnExit.Size = new System.Drawing.Size(115, 33);
@@ -250,7 +250,7 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(453, 630);
+            this.txtTotal.Location = new System.Drawing.Point(446, 568);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(177, 33);
@@ -261,7 +261,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(358, 638);
+            this.label11.Location = new System.Drawing.Point(351, 576);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 25);
             this.label11.TabIndex = 59;
@@ -272,19 +272,19 @@
             this.btnRemove.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Image = global::project_system.Properties.Resources.delete;
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemove.Location = new System.Drawing.Point(650, 487);
+            this.btnRemove.Location = new System.Drawing.Point(69, 659);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnRemove.Size = new System.Drawing.Size(124, 33);
+            this.btnRemove.Size = new System.Drawing.Size(94, 33);
             this.btnRemove.TabIndex = 60;
-            this.btnRemove.Text = "Remove";
+            this.btnRemove.Text = "លុប";
             this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(650, 553);
+            this.btnSave.Location = new System.Drawing.Point(307, 652);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(157, 48);
             this.btnSave.TabIndex = 61;
@@ -297,7 +297,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Blue;
-            this.label12.Location = new System.Drawing.Point(277, 331);
+            this.label12.Location = new System.Drawing.Point(270, 285);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(137, 25);
             this.label12.TabIndex = 95;
@@ -308,7 +308,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(500, 367);
+            this.label8.Location = new System.Drawing.Point(493, 321);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 25);
             this.label8.TabIndex = 94;
@@ -319,7 +319,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(375, 367);
+            this.label6.Location = new System.Drawing.Point(368, 321);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 25);
             this.label6.TabIndex = 93;
@@ -330,7 +330,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(219, 367);
+            this.label5.Location = new System.Drawing.Point(212, 321);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 25);
             this.label5.TabIndex = 92;
@@ -341,7 +341,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(69, 375);
+            this.label4.Location = new System.Drawing.Point(62, 329);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 25);
             this.label4.TabIndex = 91;
@@ -351,7 +351,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 769);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(674, 769);
             this.ControlBox = false;
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);

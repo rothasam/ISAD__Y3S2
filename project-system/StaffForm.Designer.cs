@@ -64,7 +64,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(494, 18);
             this.label1.Name = "label1";
@@ -75,7 +75,7 @@
             // dgvStaff
             // 
             this.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStaff.Location = new System.Drawing.Point(645, 140);
+            this.dgvStaff.Location = new System.Drawing.Point(614, 149);
             this.dgvStaff.Name = "dgvStaff";
             this.dgvStaff.Size = new System.Drawing.Size(506, 367);
             this.dgvStaff.TabIndex = 16;
@@ -89,7 +89,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(645, 95);
+            this.txtSearch.Location = new System.Drawing.Point(614, 104);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(389, 33);
             this.txtSearch.TabIndex = 19;
@@ -100,10 +100,10 @@
             this.btnExit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Image = global::project_system.Properties.Resources.close;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(1014, 522);
+            this.btnExit.Location = new System.Drawing.Point(1000, 531);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnExit.Size = new System.Drawing.Size(137, 33);
+            this.btnExit.Size = new System.Drawing.Size(120, 33);
             this.btnExit.TabIndex = 24;
             this.btnExit.Text = "ចាកចេញ";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,7 +115,7 @@
             this.button2.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::project_system.Properties.Resources.search_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(1050, 94);
+            this.button2.Location = new System.Drawing.Point(1019, 103);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.button2.Size = new System.Drawing.Size(101, 33);
@@ -197,7 +197,7 @@
             // 
             // picBox
             // 
-            this.picBox.Location = new System.Drawing.Point(398, 43);
+            this.picBox.Location = new System.Drawing.Point(373, 43);
             this.picBox.Name = "picBox";
             this.picBox.Size = new System.Drawing.Size(137, 140);
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -244,7 +244,7 @@
             this.button3.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::project_system.Properties.Resources.upload;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(408, 205);
+            this.button3.Location = new System.Drawing.Point(383, 205);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.button3.Size = new System.Drawing.Size(117, 33);
@@ -270,7 +270,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Image = global::project_system.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(452, 377);
+            this.btnAdd.Location = new System.Drawing.Point(336, 377);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnAdd.Size = new System.Drawing.Size(105, 33);
@@ -285,7 +285,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Image = global::project_system.Properties.Resources.update;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(338, 377);
+            this.btnEdit.Location = new System.Drawing.Point(222, 377);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnEdit.Size = new System.Drawing.Size(92, 33);
@@ -318,7 +318,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Image = global::project_system.Properties.Resources.delete;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(219, 377);
+            this.btnDelete.Location = new System.Drawing.Point(103, 377);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnDelete.Size = new System.Drawing.Size(106, 33);
@@ -375,7 +375,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(32, 95);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 451);
+            this.panel1.Size = new System.Drawing.Size(547, 451);
             this.panel1.TabIndex = 26;
             // 
             // StaffForm
@@ -383,7 +383,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1207, 613);
+            this.ClientSize = new System.Drawing.Size(1156, 613);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);

@@ -155,7 +155,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
             this.label7.Location = new System.Drawing.Point(295, 27);
             this.label7.Name = "label7";
@@ -168,10 +168,10 @@
             this.btnExit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Image = global::project_system.Properties.Resources.close;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(647, 395);
+            this.btnExit.Location = new System.Drawing.Point(663, 395);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnExit.Size = new System.Drawing.Size(131, 33);
+            this.btnExit.Size = new System.Drawing.Size(115, 33);
             this.btnExit.TabIndex = 38;
             this.btnExit.Text = "ចាកចេញ";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

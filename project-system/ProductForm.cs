@@ -28,7 +28,7 @@ namespace project_system
 
             MyOper.StyleButton(btnAdd, backColor: Color.FromArgb(52, 152, 219), hoverColor: Color.FromArgb(40, 116, 167));
             MyOper.StyleButton(btnExit, backColor: Color.White, hoverColor: Color.Gray, foreColor: Color.Black);
-            MyOper.StyleButton(btnEdit, backColor: Color.Orange);
+            MyOper.StyleButton(btnEdit, backColor: Color.Orange, hoverColor: Color.DarkOrange);
         }
 
         public void loadData()

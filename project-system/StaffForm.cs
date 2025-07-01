@@ -35,8 +35,8 @@ namespace project_system
 
             MyOper.StyleButton(btnAdd, backColor: Color.FromArgb(52, 152, 219), hoverColor: Color.FromArgb(40, 116, 167));
             MyOper.StyleButton(btnExit, backColor: Color.White, hoverColor: Color.Gray, foreColor: Color.Black);
-            MyOper.StyleButton(btnEdit, backColor: Color.LightGoldenrodYellow);
-            MyOper.StyleButton(btnDelete, backColor: Color.Red);
+            MyOper.StyleButton(btnEdit, backColor: Color.Orange,hoverColor: Color.DarkOrange);
+            MyOper.StyleButton(btnDelete, backColor: Color.Red, hoverColor: Color.DarkRed);
         }
 
         public void loadData()
@@ -164,10 +164,10 @@ namespace project_system
                     MemoryStream ms = new MemoryStream(photo); 
                     picBox.Image = Image.FromStream(ms);  // check image format if it not match the type that required ?
                 }
-                else
-                {
-                    MessageBox.Show("No image");
-                }
+                //else
+                //{
+                //    MessageBox.Show("No image");
+                //}
 
             }
 

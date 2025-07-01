@@ -52,13 +52,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Noto Sans Khmer", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(283, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(228, 43);
             this.label2.TabIndex = 2;
-            this.label2.Text = "ព័ត៌មានអ្នកផ្គត់ផ្គង";
+            this.label2.Text = "ព័ត៌មានអ្នកផ្គត់ផ្គង់";
             // 
             // txtName
             // 
@@ -142,10 +142,10 @@
             this.btnExit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Image = global::project_system.Properties.Resources.close;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(678, 439);
+            this.btnExit.Location = new System.Drawing.Point(671, 439);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnExit.Size = new System.Drawing.Size(110, 33);
+            this.btnExit.Size = new System.Drawing.Size(117, 33);
             this.btnExit.TabIndex = 29;
             this.btnExit.Text = "ចាកចេញ";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
