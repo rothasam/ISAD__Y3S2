@@ -24,6 +24,11 @@ namespace project_system
             InitializeComponent(); 
             loadData(); // call method loadData()
             this.mainForm = mainForm;
+
+
+            MyOper.StyleButton(btnAdd, backColor: Color.FromArgb(52, 152, 219), hoverColor: Color.FromArgb(40, 116, 167));
+            MyOper.StyleButton(btnExit, backColor: Color.White, hoverColor: Color.Gray, foreColor: Color.Black);
+            MyOper.StyleButton(btnEdit, backColor: Color.Orange);
         }
 
         public void loadData()

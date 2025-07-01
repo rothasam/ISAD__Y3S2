@@ -31,6 +31,12 @@ namespace project_system
             this.mainForm = mainForm;
 
             loadData();
+
+
+            MyOper.StyleButton(btnAdd, backColor: Color.FromArgb(52, 152, 219), hoverColor: Color.FromArgb(40, 116, 167));
+            MyOper.StyleButton(btnExit, backColor: Color.White, hoverColor: Color.Gray, foreColor: Color.Black);
+            MyOper.StyleButton(btnEdit, backColor: Color.LightGoldenrodYellow);
+            MyOper.StyleButton(btnDelete, backColor: Color.Red);
         }
 
         public void loadData()
@@ -203,50 +209,12 @@ namespace project_system
             filePath = null;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StaffForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvStaff_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
             mainForm.Show(); 
         }
+
     }
 }

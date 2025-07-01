@@ -24,6 +24,12 @@ namespace project_system
             InitializeComponent();
             loadData();
             this.mainForm = mainForm;
+
+
+            MyOper.StyleButton(btnAdd, backColor: Color.FromArgb(52, 152, 219), hoverColor: Color.FromArgb(40, 116, 167));
+            MyOper.StyleButton(btnExit, backColor: Color.White, hoverColor: Color.Gray, foreColor: Color.Black);
+            MyOper.StyleButton(btnEdit, backColor: Color.Orange);
+            MyOper.StyleButton(btnDelete, backColor: Color.Red);
         }
 
         public void loadData()
@@ -72,32 +78,6 @@ namespace project_system
         {
             (dgvCus.DataSource as DataTable).DefaultView.RowFilter = string.Format(
                 "Name LIKE '%{0}%'", txtSearch.Text);
-        }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void CustomerForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void dgvCellClick(object sender, DataGridViewCellEventArgs e)

@@ -45,8 +45,8 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvPro = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPro)).BeginInit();
             this.panel1.SuspendLayout();
@@ -168,12 +168,12 @@
             this.btnExit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Image = global::project_system.Properties.Resources.close;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(686, 395);
+            this.btnExit.Location = new System.Drawing.Point(647, 395);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnExit.Size = new System.Drawing.Size(92, 33);
+            this.btnExit.Size = new System.Drawing.Size(131, 33);
             this.btnExit.TabIndex = 38;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "ចាកចេញ";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -225,35 +225,35 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnEdit
             // 
-            this.button4.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::project_system.Properties.Resources.update;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(166, 395);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.button4.Size = new System.Drawing.Size(92, 33);
-            this.button4.TabIndex = 40;
-            this.button4.Text = "Edit";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.onUpdate);
+            this.btnEdit.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Image = global::project_system.Properties.Resources.update;
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.Location = new System.Drawing.Point(166, 395);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnEdit.Size = new System.Drawing.Size(92, 33);
+            this.btnEdit.TabIndex = 40;
+            this.btnEdit.Text = "កែប្រែ";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.onUpdate);
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::project_system.Properties.Resources.add;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(267, 395);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.button1.Size = new System.Drawing.Size(89, 33);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Add";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.onAddNew);
+            this.btnAdd.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Image = global::project_system.Properties.Resources.add;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(267, 395);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnAdd.Size = new System.Drawing.Size(101, 33);
+            this.btnAdd.TabIndex = 39;
+            this.btnAdd.Text = "បញ្ចូល";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.onAddNew);
             // 
             // panel1
             // 
@@ -282,8 +282,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtSearch);
@@ -318,8 +318,8 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvPro;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtQty;
     }

@@ -16,6 +16,7 @@ namespace project_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new PaymentForm());
             Application.Run(new MainForm());
         }
     }

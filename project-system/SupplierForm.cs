@@ -25,6 +25,11 @@ namespace project_system
             InitializeComponent();
             loadData();
             this.mainForm = mainForm;
+
+            MyOper.StyleButton(btnAdd, backColor: Color.FromArgb(52, 152, 219), hoverColor: Color.FromArgb(40, 116, 167));
+            MyOper.StyleButton(btnExit, backColor: Color.White, hoverColor: Color.Gray, foreColor: Color.Black);
+            MyOper.StyleButton(btnEdit, backColor: Color.LightGoldenrodYellow);
+            MyOper.StyleButton(btnDelete, backColor: Color.Red);
         }
 
         public void loadData()
@@ -105,30 +110,6 @@ namespace project_system
             MessageBox.Show("Supplier updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SupplierForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvSup_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
