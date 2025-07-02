@@ -106,6 +106,24 @@ namespace project_system
             txtRemain.Text = String.Format("{0:c}",Decimal.Parse(r.ToString())); 
         }
 
+        //private void btnAdd_Click(object sender, EventArgs e)
+        //{
+        //    com = new SqlCommand("spPayment", op.con);
+        //    com.CommandType = CommandType.StoredProcedure;
+        //    com.Parameters.AddWithValue("@PD", dtp.Text);
+        //    com.Parameters.AddWithValue("@SI", cboStaffID.Text);
+        //    com.Parameters.AddWithValue("@FN", txtStaffName.Text);
+        //    com.Parameters.AddWithValue("@IC", int.Parse(cboInvCode.SelectedValue.ToString()));
+        //    if(d+r == t)
+        //        com.Parameters.AddWithValue("@Dep", decimal.Parse(txtRemain.Text, NumberStyles.Currency, CultureInfo.CurrentCulture.NumberFormat));
+        //    else
+        //        com.Parameters.AddWithValue("@Dep", float.Parse(txtDeposit.Text));
+        //    com.Parameters.AddWithValue("@A", decimal.Parse(txtTotal.Text,NumberStyles.Currency,CultureInfo.CurrentCulture.NumberFormat));
+        //    com.ExecuteNonQuery();
+        //    MessageBox.Show("ការទូទាត់បានបញ្ចប់ដោយជោគជ័យ", "ការទូទាត់", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        //}
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             com = new SqlCommand("spPayment", op.con);
@@ -114,14 +132,15 @@ namespace project_system
             com.Parameters.AddWithValue("@SI", cboStaffID.Text);
             com.Parameters.AddWithValue("@FN", txtStaffName.Text);
             com.Parameters.AddWithValue("@IC", int.Parse(cboInvCode.SelectedValue.ToString()));
-            if(d+r==t)
-                com.Parameters.AddWithValue("@Dep", decimal.Parse(txtRemain.Text, NumberStyles.Currency, CultureInfo.CurrentCulture.NumberFormat));
-            else
-                com.Parameters.AddWithValue("@Dep", float.Parse(txtDeposit.Text));
-            com.Parameters.AddWithValue("@A", decimal.Parse(txtTotal.Text,NumberStyles.Currency,CultureInfo.CurrentCulture.NumberFormat));
-            com.ExecuteNonQuery();
-            MessageBox.Show("ការទូទាត់បានបញ្ចប់ដោយជោគជ័យ", "ការទូទាត់", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Always insert the current remaining balance
+            com.Parameters.AddWithValue("@Dep", decimal.Parse(txtRemain.Text, NumberStyles.Currency, CultureInfo.CurrentCulture.NumberFormat));
+
+            com.Parameters.AddWithValue("@A", decimal.Parse(txtTotal.Text, NumberStyles.Currency, CultureInfo.CurrentCulture.NumberFormat));
+            com.ExecuteNonQuery();
+
+            MessageBox.Show("ការទូទាត់បានបញ្ចប់ដោយជោគជ័យ", "ការទូទាត់", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }

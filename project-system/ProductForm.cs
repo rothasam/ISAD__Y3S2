@@ -31,6 +31,14 @@ namespace project_system
             MyOper.StyleButton(btnEdit, backColor: Color.Orange, hoverColor: Color.DarkOrange);
         }
 
+        private void clearInput()
+        {
+            txtName.Text = null;
+            txtId.Text = null;
+            txtQty.Text = null;
+            txtPrice.Text = null;
+            txtSalePrice.Text = null;
+        }
         public void loadData()
         {
             this.dgvPro.DefaultCellStyle.Font = new Font("Noto Sans Khmer", 10);
@@ -80,6 +88,7 @@ namespace project_system
         {
             com = new SqlCommand("spSetProduct", op.con);
             com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@proId", Convert.ToInt32(txtId.Text));
             com.Parameters.AddWithValue("@proName", txtName.Text);
             com.Parameters.AddWithValue("@qty", txtQty.Text);
             com.Parameters.AddWithValue("@upis", txtPrice.Text);
@@ -88,6 +97,8 @@ namespace project_system
             com.ExecuteNonQuery();// run stored procedure
 
             MessageBox.Show("Product added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            clearInput();
         }
 
         private void ProductForm_Load(object sender, EventArgs e)
@@ -127,6 +138,8 @@ namespace project_system
             com.Parameters.AddWithValue("@priceInstock", txtPrice.Text);
             com.Parameters.AddWithValue("@salePrice", txtSalePrice.Text);
             com.ExecuteNonQuery();
+
+            clearInput();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

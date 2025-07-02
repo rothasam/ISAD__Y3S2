@@ -32,6 +32,15 @@ namespace project_system
             MyOper.StyleButton(btnDelete, backColor: Color.Red, hoverColor: Color.DarkRed);
         }
 
+        private void clearInput()
+        {
+            txtName.Text = null;
+            txtId.Text = null;
+            txtAddress.Text = null;
+            txtContact.Text = null;
+        }
+
+
         public void loadData()
         {
             this.dgvSup.DefaultCellStyle.Font = new Font("Noto Sans Khmer", 10);
@@ -69,6 +78,12 @@ namespace project_system
 
             com.ExecuteNonQuery();// run stored procedure
             MessageBox.Show("Supplier added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtName.Clear();
+            txtAddress.Clear();
+            txtContact.Clear();
+            txtName.Focus();
+            clearInput();
         }
 
         private void onSearch(object sender, EventArgs e)
@@ -79,7 +94,8 @@ namespace project_system
 
         private void onDelete(object sender, EventArgs e)
         {
-            // 
+
+            clearInput();
         }
 
         private void dgvCellClick(object sender, DataGridViewCellEventArgs e)
@@ -108,6 +124,7 @@ namespace project_system
             com.Parameters.AddWithValue("@contact", txtContact.Text);
             com.ExecuteNonQuery();
             MessageBox.Show("Supplier updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            clearInput();
         }
 
 
@@ -115,6 +132,11 @@ namespace project_system
         {
             this.Close();
             mainForm.Show();
+        }
+
+        private void SupplierForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

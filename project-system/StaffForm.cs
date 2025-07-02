@@ -58,14 +58,26 @@ namespace project_system
             dgvStaff.DataSource = dt;
 
 
-            dgvStaff.Columns[0].HeaderText = "អត្ថលេខ";
-            dgvStaff.Columns[1].HeaderText = "ឈ្មោះ";
-            dgvStaff.Columns[2].HeaderText = "ភេទ";
-            dgvStaff.Columns[3].HeaderText = "ថ្ងៃខែឆ្នាំកំណើត";
-            dgvStaff.Columns[4].HeaderText = "មុខតំណែង";
-            dgvStaff.Columns[5].HeaderText = "ប្រាក់ខែ";
-            dgvStaff.Columns[6].HeaderText = "ឈប់ធ្វើការ";
-            dgvStaff.Columns[7].HeaderText = "រូបភាព";
+            //dgvStaff.Columns[0].HeaderText = "អត្ថលេខ";
+            //dgvStaff.Columns[1].HeaderText = "ឈ្មោះ";
+            //dgvStaff.Columns[2].HeaderText = "ភេទ";
+            //dgvStaff.Columns[3].HeaderText = "ថ្ងៃខែឆ្នាំកំណើត";
+            //dgvStaff.Columns[4].HeaderText = "មុខតំណែង";
+            //dgvStaff.Columns[5].HeaderText = "ប្រាក់ខែ";
+            //dgvStaff.Columns[6].HeaderText = "ឈប់ធ្វើការ";
+            //dgvStaff.Columns[7].HeaderText = "រូបភាព";
+            if (dgvStaff.Columns.Count >= 8)
+            {
+                dgvStaff.Columns[0].HeaderText = "អត្ថលេខ";
+                dgvStaff.Columns[1].HeaderText = "ឈ្មោះ";
+                dgvStaff.Columns[2].HeaderText = "ភេទ";
+                dgvStaff.Columns[3].HeaderText = "ថ្ងៃខែឆ្នាំកំណើត";
+                dgvStaff.Columns[4].HeaderText = "មុខតំណែង";
+                dgvStaff.Columns[5].HeaderText = "ប្រាក់ខែ";
+                dgvStaff.Columns[6].HeaderText = "ឈប់ធ្វើការ";
+                dgvStaff.Columns[7].HeaderText = "រូបភាព";
+                dgvStaff.Columns[7].Width = 75;
+            }
 
             dgvStaff.RowTemplate.Height = 80; // set height of row 
             dgvStaff.Columns[7].Width = 75; // set width of column
@@ -95,7 +107,7 @@ namespace project_system
         private void onSearch(object sender, EventArgs e)
         {
             (dgvStaff.DataSource as DataTable).DefaultView.RowFilter = string.Format(
-                "Name LIKE '%{0}%' OR CONVERT(StaffID, 'System.String') LIKE '%{0}%'", txtSearch.Text);   // search with '%{0}%' for varchar and N'%{0}%' for nvarchar
+                "Name LIKE '%{0}%' OR CONVERT(ID, 'System.String') LIKE '%{0}%'", txtSearch.Text);   // search with '%{0}%' for varchar and N'%{0}%' for nvarchar
         }                        // convert StaffID to string because it is integer in database and we want to search with string
 
         private void btnBrowseFile(object sender, EventArgs e)
@@ -133,8 +145,8 @@ namespace project_system
 
             com.ExecuteNonQuery();  // run stored procedure
             MessageBox.Show("ជោគជ័យ");
-            filePath = null;
-
+            
+            clearInput();
         }
 
         // this method is used to update data base on cell click 
@@ -179,6 +191,8 @@ namespace project_system
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@id", txtId.Text);
             com.ExecuteNonQuery();
+
+            clearInput();
         }
 
         private void onUpdate(object sender, EventArgs e)
@@ -206,7 +220,8 @@ namespace project_system
 
             com.ExecuteNonQuery();  // run stored procedure
             MessageBox.Show("ជោគជ័យ");
-            filePath = null;
+
+            clearInput();
         }
 
 
@@ -216,5 +231,18 @@ namespace project_system
             mainForm.Show(); 
         }
 
+        private void clearInput()
+        {
+            filePath = null;
+            rdbFemale.Checked = false;
+            rdbMale.Checked = false;
+            txtId.Text = null;
+            txtName.Text = null;
+            txtSalary.Text = null;
+            txtPosition.Text = null;
+            photo = null;
+            picBox.Image = null;
+            dateDob.Value = DateTime.Now;
+        }
     }
 }

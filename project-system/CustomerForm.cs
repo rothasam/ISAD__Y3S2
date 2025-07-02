@@ -32,6 +32,14 @@ namespace project_system
             MyOper.StyleButton(btnDelete, backColor: Color.Red, hoverColor: Color.DarkRed);
         }
 
+        private void clearInput()
+        {
+            txtName.Text = null;
+            txtId.Text = null;
+            txtContact.Text = null;
+
+        }
+
         public void loadData()
         {
             this.dgvCus.DefaultCellStyle.Font = new Font("Noto Sans Khmer", 10);
@@ -72,6 +80,7 @@ namespace project_system
 
             com.ExecuteNonQuery();  // run stored procedure
             MessageBox.Show("ជោគជ័យ");
+            clearInput();
         }
 
         private void onSearch(object sender, EventArgs e)
@@ -104,6 +113,8 @@ namespace project_system
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@id", txtId.Text);
             com.ExecuteNonQuery();
+
+            clearInput();
         }
 
         private void onUpdate(object sender, EventArgs e)
@@ -117,6 +128,8 @@ namespace project_system
             com.ExecuteNonQuery();
 
             MessageBox.Show("ជោគជ័យ");
+
+            clearInput();
 
         }
 

@@ -81,9 +81,11 @@
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Noto Sans Khmer", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(25, 51);
             this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(99, 33);
             this.txtId.TabIndex = 7;
             // 
@@ -264,6 +266,7 @@
             this.Controls.Add(this.label2);
             this.Name = "SupplierForm";
             this.Text = "Supplier";
+            this.Load += new System.EventHandler(this.SupplierForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSup)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
